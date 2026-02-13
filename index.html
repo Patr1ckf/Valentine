@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja Walentynka</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
 </head>
 <body>
+    <div id="pin-overlay">
+        <div id="pin-box">
+            <h2>Wprowadź kod dostępu ❤️</h2>
+            <input type="password" id="pin-input" placeholder="Wpisz PIN" maxlength="8">
+            <button id="pin-submit">Wejdź</button>
+            <p id="pin-error" style="color: red; display: none;">Błędny kod, spróbuj ponownie!</p>
+        </div>
+    </div>
+
     <div id="container">
         <img id="main-gif" src="gifik.gif" alt="Uroczy kotek">
         
@@ -17,6 +27,11 @@
             <button id="noBtn">Nie</button>
         </div>
     </div>
+
+    <audio id="bg-music" loop>
+    <source src="piosenka.m4a" type="audio/mpeg">
+    </audio>
+    <!-- <button id="musicToggle" style="position: fixed; bottom: 10px; right: 10px; font-size: 0.8rem; opacity: 0.5;">🎵 Graj muzykę</button> -->
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
