@@ -1,13 +1,13 @@
 
 body {
-    background-color: #ffeef2; /* Miękki różowy */
+    background-color: #ffeef2;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden; /* Zapobiega scrollowaniu przy ucieczce przycisku */
+    overflow: hidden; 
 }
 
 #container {
@@ -35,7 +35,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 60px; /* Stała wysokość, żeby przycisk NIE miał skąd uciec */
+    height: 60px; 
     position: relative;
 }
 
@@ -62,6 +62,6 @@ button {
 #noBtn {
     background-color: #8a8a8a;
     color: white;
-    position: relative; /* Zmienimy na absolute w JS */
+    position: relative; 
     z-index: 10;
 }
