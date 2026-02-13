@@ -1,0 +1,67 @@
+
+body {
+    background-color: #ffeef2; /* Miękki różowy */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Zapobiega scrollowaniu przy ucieczce przycisku */
+}
+
+#container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(214, 51, 132, 0.2);
+    max-width: 90%;
+}
+
+#main-gif {
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #d63384;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 60px; /* Stała wysokość, żeby przycisk NIE miał skąd uciec */
+    position: relative;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+#yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #ff758f;
+    transform: scale(1.1);
+}
+
+#noBtn {
+    background-color: #8a8a8a;
+    color: white;
+    position: relative; /* Zmienimy na absolute w JS */
+    z-index: 10;
+}
